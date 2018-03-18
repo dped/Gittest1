@@ -1,0 +1,40 @@
+1. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    A bug will be introduced due to some differences we made, if we introduced a typo and so on..
+    Diff can help us identify those.
+
+2. How could having easy access to the entire history of a file make you a more efficient
+   programmer in the long term?
+
+    It would help by allowing the programmer to go back to previous versions of the file after detecting some bug or problem, or after making a mistake.
+
+3. What do you think are the pros and cons of manually choosing when to create a commit, like you
+   do in Git, vs having versions automatically saved, like Google Docs does?
+
+   pros:
+    1) can easily find version to roll back. Because we think our workprocess as logical work unit.
+    2) no extra work is needed to get working code base.
+    3) 'diff' would be more efficient, because there is context about what has been changed.
+   cons:
+    1) loose changed data if user doesn't commit.
+    2) log may become too clutered, if user commit too often.
+
+4. Why do you think some version control systems, like Git, allow saving multiple files in one
+   commit, while others, like Google Docs, treat each file separately?
+
+    Because in Git, several files might be interconnected and dependant on each other with regards to pieces of code from programming, while in Google Docs, such relationship doesn't make much sense, since most files don't interact with others (except, for example, some spreadsheets).
+    Because in programming one logical change comes with multiple file change,
+    so that one can save entire working project rather than single individual file.
+
+5. How can you use the commands git log and git diff to view the history of files?
+
+    git log: to see commit list
+    git diff first_id second_id: to view and compare specific commits
+
+6. How might using version control make you more confident to make changes that could break
+   something?
+
+    By running git checkout <target> you go back to aprevious commit. Just by knowing that I can come back to any previous state that I saved (committed) , compare it with other commits and fix it or simply continue when things are working well.
+
+7. Now that you have your workspace set up, what do you want to try using Git for?
+    Collaboration.

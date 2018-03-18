@@ -1,0 +1,139 @@
+1. What happens when you initialize a repository? Why do you need to do it?
+
+	Git creates the .git folder and starts tracking changes via commits, as far as you save them.
+
+2. How is the staging area different from the working directory and the repository?
+   What value do you think it offers?
+
+	It is different because it allows to select several and not necessarily all the files, to work with them in a single commit. It offers a great value since you can kind of isolate some files in order to do modifications, and track them easily.
+
+3. How can you use the staging area to make sure you have one commit per logical change?
+
+	I can add files to the staging area and check the modifications using git status, I guess...
+
+4. What are some situations when branches would be helpful in keeping your history organized?
+   How would branches help?
+
+	Whenever that I need to make experimental changes, or a different version of the application for any specific reason, without losing all the progress done before until some point.
+
+5. How do the diagrams help you visualize the branch structure?
+
+	They let me easily have a quick view of what commits are accesible in each branch.
+
+6. What is the result of merging two branches together?
+   Why do we represent it in the diagram the way we do?
+
+	The result is a new branch including all the commits of both previous branches, ordered by date and time. It is represented that way to show that all the commits are still available even if they came from two different branches
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+
+	No idea. I'm getting lost.
+
+What happens when you initialise a repository?
+Why do you need to do it?
+
+cd          go a desired folder.
+
+git init    to create a .git file this is a repository created.
+
+git status  gives a status of the current untracked files that are in this 	    directory.
+
+ViewHistory
+How can you use the commands git log and git diff to view the
+history of files?
+
+$ git clone (+url address)
+
+$ git log
+to see the history of all different commits
+ID number number 2
+
+ID number 1 previous
+
+
+$ git diff ID-number1-previous ID-number2
+// then I get to see
+green: added
+red: removed
+
+
+How is the staging area different from the
+working directory and the repository? What
+value do you think it offers?
+
+Staging area offers a space, where you add one
+file at a time.
+When all the added files are done, then you
+commit all those files in one.
+
+How can you use the staging area to make sure you
+have one commit per logical change?
+
+I can add files to the staging area and check the modifications using git status.
+
+
+What are some situations when branches would be helpful
+in keeping your history organised? How would branches help?
+
+If one wants to experiment with adding a new feature, or play
+with a change in a game, then: create a new branch, for example
+'easy-mode':
+
+'git branch easy-mode'
+
+then open the file in sublime text via the terminal,
+then add it to the check-out branch
+
+git add filename
+
+git status
+
+
+Usually move to another branch, when you are moving on to
+a different piece of work. Anytime, I’m doing something
+different: I will create a new branch. Think of it as context
+switching, a new feature, or correct a bug.
+
+Git branches:
+
+helps you keep organised
+particularly, when you are sharing that branch publicly.
+
+You have your master branch, which will be your production
+quality branch that always works.
+
+And, you could have a development branch, where active work
+is taking place on your project.
+
+Then a lot of for example an experimental branch.
+Or maybe some unique video branches. Those, that you are
+working on, and you are fully expecting them to break.
+And you wanna share those with the public, but with the
+fully understanding, that this is not productive work.
+
+Branches are also good, when, not only collaborating publicly,
+but it is really good to collaborate with yourself.
+
+
+How do the diagrams help you visualise the branch structure?
+
+Each commit remember its own parent commit. So each line is
+a history.
+However earlier commits can be hidden if it was created in
+another branch.
+
+What is the result of merging two branches together?
+The branch where you are checked out, merges this branch with
+the other branch you declare:
+Git merge branch2 then branch2 is merged into your current branch.
+Then all earlier commits on those two branches are now reachable from your current branch.
+
+Why do we represent it in the diagram the way we do?
+To illustrate how to track the commits, how the commits are
+structured.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Manually: It gives you control over committing when you actually need to, that is when you create something new, which you are not sure yet will actually work.
+Automatic merges: not sure.
