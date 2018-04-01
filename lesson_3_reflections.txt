@@ -30,3 +30,14 @@
     2. I don't know what would be harder. Maybe to learn all this commands and concepts at beginning.
 
 6. When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
+
+7.  Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+    Forks:
+    Happens on two different repositories. That is when you want to make a copy from somebody else’s profile to your own profile.
+
+    Cloning:
+    Is taking an existing repository, and making one just like it. The original repository can either be:
+        1. remote, from GitHub to a local repository.
+        2. Or it can be a local repository into another spot on your computer.
+    Branches: Happens on a single repository.
